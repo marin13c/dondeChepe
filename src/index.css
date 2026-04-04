@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #0f0f0f;
+  --color-charcoal-800: #1a1a1a;
+  --color-charcoal-700: #242424;
+  --color-charcoal-600: #2e2e2e;
+  --color-cream: #f5f0e8;
+  --color-cream-dark: #ede6d6;
+  --color-amber: #c8621a;
+  --color-amber-light: #e07a30;
+  --color-amber-dark: #a04e12;
+  --color-gold: #d4a853;
+  --color-gold-light: #e4bf73;
+  --font-playfair: 'Playfair Display', serif;
+  --font-dm: 'DM Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #f5f0e8;
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+/* Grain texture overlay */
+.grain-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.35;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #c8621a;
+  border-radius: 3px;
+}
