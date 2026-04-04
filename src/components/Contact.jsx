@@ -87,8 +87,9 @@ export default function Contact() {
                   aria-label={social.label}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                  whileHover={{ scale: 1.1, transition: { duration: 0.15 } }}
                   transition={{ duration: 0.4, delay: 0.2 + i * 0.08 }}
-                  className={`w-11 h-11 border border-[#2e2e2e] flex items-center justify-center text-[#f5f0e8]/40 ${social.hoverColor} hover:border-[#f5f0e8]/20 transition-all duration-300 text-xl hover:scale-110`}
+                  className={`w-11 h-11 border border-[#2e2e2e] flex items-center justify-center text-[#f5f0e8]/40 ${social.hoverColor} hover:border-[#f5f0e8]/20 transition-colors duration-300 text-xl`}
                 >
                   <social.icon />
                 </motion.a>

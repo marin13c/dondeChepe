@@ -129,17 +129,9 @@ function MenuCard({ item, index }) {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -4, scale: 1.01, transition: { duration: 0.2, ease: 'easeOut' } }}
       transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
-      className="group relative bg-[#1a1a1a] overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-[#c8621a]/20 transition-all duration-500"
-      style={{ border: '1px solid #2e2e2e' }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.border = '1px solid #c8621a66';
-        e.currentTarget.style.transform = 'translateY(-4px) scale(1.01)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.border = '1px solid #2e2e2e';
-        e.currentTarget.style.transform = 'translateY(0) scale(1)';
-      }}
+      className="group relative bg-[#1a1a1a] overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-[#c8621a]/20 transition-shadow duration-500 border border-[#2e2e2e] hover:border-[#c8621a]/40"
     >
       {/* Image */}
       <div className="relative overflow-hidden h-52">

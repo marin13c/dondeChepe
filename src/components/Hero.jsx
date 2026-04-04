@@ -41,15 +41,15 @@ export default function Hero() {
 
       {/* Decorative amber line */}
       <motion.div
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: 1 }}
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
         transition={{ delay: 1.2, duration: 0.8, ease: 'easeOut' }}
-        className="absolute left-0 top-1/2 w-1 h-64 bg-[#c8621a] origin-top hidden lg:block"
-        style={{ transform: 'translateY(-50%)' }}
+        className="absolute left-0 w-1 h-64 bg-[#c8621a] origin-top hidden lg:block"
+        style={{ top: 'calc(50% - 8rem)' }}
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full pt-24 pb-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full pt-24 pb-36">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -107,42 +107,42 @@ export default function Hero() {
             </button>
           </motion.div>
         </motion.div>
-
-        {/* Bottom info strip */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.6, duration: 0.8 }}
-          className="absolute bottom-10 left-6 right-6 lg:left-10 lg:right-10 flex items-end justify-between"
-        >
-          <div className="hidden md:flex items-center gap-8 text-[#f5f0e8]/40">
-            <div className="text-center">
-              <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">2018</div>
-              <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Fundado</div>
-            </div>
-            <div className="w-px h-10 bg-[#f5f0e8]/20" />
-            <div className="text-center">
-              <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">12</div>
-              <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Items en Menú</div>
-            </div>
-            <div className="w-px h-10 bg-[#f5f0e8]/20" />
-            <div className="text-center">
-              <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">4.9</div>
-              <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Calificación</div>
-            </div>
-          </div>
-
-          {/* Scroll indicator */}
-          <div className="flex flex-col items-center gap-2 text-[#f5f0e8]/30">
-            <span className="font-['DM_Sans'] text-xs tracking-widest uppercase">Scroll</span>
-            <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
-              className="w-px h-8 bg-gradient-to-b from-[#f5f0e8]/30 to-transparent"
-            />
-          </div>
-        </motion.div>
       </div>
+
+      {/* Bottom info strip — absolute to section so it truly anchors to viewport bottom */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.6, duration: 0.8 }}
+        className="absolute bottom-10 left-6 right-6 lg:left-10 lg:right-10 z-10 flex items-end justify-between"
+      >
+        <div className="hidden md:flex items-center gap-8 text-[#f5f0e8]/40">
+          <div className="text-center">
+            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">2018</div>
+            <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Fundado</div>
+          </div>
+          <div className="w-px h-10 bg-[#f5f0e8]/20" />
+          <div className="text-center">
+            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">12</div>
+            <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Items en Menú</div>
+          </div>
+          <div className="w-px h-10 bg-[#f5f0e8]/20" />
+          <div className="text-center">
+            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">4.9</div>
+            <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Calificación</div>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="flex flex-col items-center gap-2 text-[#f5f0e8]/30">
+          <span className="font-['DM_Sans'] text-xs tracking-widest uppercase">Scroll</span>
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
+            className="w-px h-8 bg-gradient-to-b from-[#f5f0e8]/30 to-transparent"
+          />
+        </div>
+      </motion.div>
     </section>
   );
 }

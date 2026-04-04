@@ -125,7 +125,7 @@ export default function Location() {
             <div className="relative overflow-hidden" style={{ height: '420px' }}>
               <iframe
                 title="Brass & Bun Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9!2d-84.0907!3d9.9281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e34ceef49ff3%3A0x8fa0e34ceef49ff3!2sParque%20Central%2C%20San%20Jos%C3%A9!5e0!3m2!1ses!2scr!4v1699999999999!5m2!1ses!2scr"
+                src="https://maps.google.com/maps?q=9.9281,-84.0907&z=16&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(100%) invert(92%) contrast(83%)' }}
