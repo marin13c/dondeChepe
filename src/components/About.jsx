@@ -4,15 +4,15 @@ import { RiDoubleQuotesL } from 'react-icons/ri';
 
 const owners = [
   {
-    name: 'Chef Rodrigo Monge',
-    role: 'Chef Ejecutivo & Co-Fundador',
-    quote: '"La cocina rápida no tiene por qué ser cocina descuidada."',
+    name: 'Lorem Ipsum Dolor',
+    role: 'Ipsum Consectetur & Lorem Sit',
+    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.',
     avatar: 'https://i.pravatar.cc/150?img=12',
   },
   {
-    name: 'Daniela Salas',
-    role: 'Directora de Experiencia & Co-Fundadora',
-    quote: '"Queremos que cada visita sea un momento que valga la pena recordar."',
+    name: 'Amet Consectetur',
+    role: 'Dolor Adipiscing & Ipsum Elit',
+    quote: 'Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.',
     avatar: 'https://i.pravatar.cc/150?img=47',
   },
 ];
@@ -43,8 +43,8 @@ export default function About() {
               />
               {/* Floating badge */}
               <div className="absolute -bottom-6 -right-6 z-20 bg-[#c8621a] p-6 hidden sm:block">
-                <div className="font-['Playfair_Display'] font-black text-4xl text-white leading-none">6+</div>
-                <div className="font-['DM_Sans'] text-xs tracking-widest uppercase text-white/80 mt-1">Años</div>
+                <div className="font-['Playfair_Display'] font-black text-4xl text-white leading-none">0+</div>
+                <div className="font-['DM_Sans'] text-xs tracking-widest uppercase text-white/80 mt-1">Lorem</div>
               </div>
             </div>
           </motion.div>
@@ -59,7 +59,7 @@ export default function About() {
             <div className="flex items-center gap-4 mb-4">
               <span className="w-12 h-px bg-[#c8621a]" />
               <span className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#c8621a] font-semibold">
-                Nuestra historia
+                Lorem ipsum dolor
               </span>
             </div>
 
@@ -67,35 +67,34 @@ export default function About() {
               className="font-['Playfair_Display'] font-black text-[#0f0f0f] leading-tight mb-8"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}
             >
-              Detrás del
+              Lorem Ipsum
               <br />
-              <span className="italic text-[#c8621a]">Mostrador</span>
+              <span className="italic text-[#c8621a]">Dolor Sit</span>
             </h2>
 
             <div className="space-y-4 font-['DM_Sans'] text-[#0f0f0f]/65 text-lg leading-relaxed font-light">
               <p>
-                Brass & Bun nació de una idea simple pero terca: que la comida rápida podía ser
-                excelente sin disculparse por ello. Rodrigo venía de cocinas de alto perfil en
-                Europa; Daniela, del mundo del diseño y la hospitalidad. Juntos decidieron
-                montar algo que se sintiera honesto.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
               <p>
-                Sin trucos de menú, sin ingredientes misteriosos, sin fotos demasiado editadas.
-                Solo producto bien trabajado, técnica real y un espacio donde la gente se sienta
-                bienvenida — aunque llegue con hambre a las 10 de la noche.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <p>
-                Desde 2018, hemos servido miles de burgers en San José. Cada una con el mismo
-                nivel de cuidado que la primera. Eso no va a cambiar.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis.
               </p>
             </div>
 
             {/* Stats */}
             <div className="mt-10 grid grid-cols-3 gap-6 pt-8 border-t border-[#0f0f0f]/10">
               {[
-                { num: '12K+', label: 'Burgers servidas' },
-                { num: '4.9★', label: 'Calificación' },
-                { num: '100%', label: 'Ingredientes locales' },
+                { num: '00K+', label: 'Lorem ipsum' },
+                { num: '0.0★', label: 'Dolor sit' },
+                { num: '000%', label: 'Amet consectetur' },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="font-['Playfair_Display'] font-black text-2xl text-[#c8621a]">{stat.num}</div>

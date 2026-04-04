@@ -59,12 +59,12 @@ export default function Contact() {
               BRASS <span className="text-[#c8621a]">&</span> BUN
             </div>
             <p className="font-['DM_Sans'] text-[#f5f0e8]/45 text-sm leading-relaxed font-light max-w-xs">
-              Comida rápida sin concesiones. Ingredientes de calidad, técnica real, y un espacio donde el buen gusto no negocia.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className="mt-8 flex items-center gap-2">
               <span className="w-8 h-px bg-[#c8621a]" />
               <span className="font-['DM_Sans'] text-xs tracking-[0.2em] uppercase text-[#c8621a]/70">
-                San José, CR
+                Lorem Ipsum, LR
               </span>
             </div>
           </motion.div>
@@ -77,7 +77,7 @@ export default function Contact() {
             className="flex flex-col items-start md:items-center"
           >
             <div className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#f5f0e8]/30 font-semibold mb-6">
-              Síguenos
+              Lorem Ipsum
             </div>
             <div className="flex gap-4">
               {socials.map((social, i) => (
@@ -100,7 +100,7 @@ export default function Contact() {
             <div className="mt-8 w-full h-px bg-[#2e2e2e] hidden md:block" />
 
             <div className="mt-6 font-['DM_Sans'] text-xs text-[#f5f0e8]/25 tracking-wider text-center hidden md:block">
-              Abierto todos los días de la semana
+              Lorem ipsum dolor sit amet
             </div>
           </motion.div>
 
@@ -112,15 +112,15 @@ export default function Contact() {
             className="space-y-5"
           >
             <div className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#f5f0e8]/30 font-semibold mb-6">
-              Contacto
+              Lorem Ipsum
             </div>
 
             <div className="flex items-start gap-3">
               <RiPhoneLine className="text-[#c8621a] text-lg mt-0.5 flex-shrink-0" />
               <div>
-                <div className="font-['DM_Sans'] text-xs text-[#f5f0e8]/35 mb-0.5 tracking-wider uppercase">Teléfono</div>
-                <a href="tel:+50622224567" className="font-['DM_Sans'] text-sm text-[#f5f0e8]/70 hover:text-[#f5f0e8] transition-colors duration-300">
-                  +506 2222 – 4567
+                <div className="font-['DM_Sans'] text-xs text-[#f5f0e8]/35 mb-0.5 tracking-wider uppercase">Lorem Dolor</div>
+                <a href="tel:+50600000000" className="font-['DM_Sans'] text-sm text-[#f5f0e8]/70 hover:text-[#f5f0e8] transition-colors duration-300">
+                  +506 0000 – 0000
                 </a>
               </div>
             </div>
@@ -128,9 +128,9 @@ export default function Contact() {
             <div className="flex items-start gap-3">
               <RiMailLine className="text-[#c8621a] text-lg mt-0.5 flex-shrink-0" />
               <div>
-                <div className="font-['DM_Sans'] text-xs text-[#f5f0e8]/35 mb-0.5 tracking-wider uppercase">Email</div>
-                <a href="mailto:hola@brassbun.cr" className="font-['DM_Sans'] text-sm text-[#f5f0e8]/70 hover:text-[#f5f0e8] transition-colors duration-300">
-                  hola@brassbun.cr
+                <div className="font-['DM_Sans'] text-xs text-[#f5f0e8]/35 mb-0.5 tracking-wider uppercase">Ipsum Sit</div>
+                <a href="mailto:lorem@ipsum.com" className="font-['DM_Sans'] text-sm text-[#f5f0e8]/70 hover:text-[#f5f0e8] transition-colors duration-300">
+                  lorem@ipsum.com
                 </a>
               </div>
             </div>
@@ -138,11 +138,11 @@ export default function Contact() {
             <div className="flex items-start gap-3">
               <RiMapPinLine className="text-[#c8621a] text-lg mt-0.5 flex-shrink-0" />
               <div>
-                <div className="font-['DM_Sans'] text-xs text-[#f5f0e8]/35 mb-0.5 tracking-wider uppercase">Dirección</div>
+                <div className="font-['DM_Sans'] text-xs text-[#f5f0e8]/35 mb-0.5 tracking-wider uppercase">Dolor Amet</div>
                 <span className="font-['DM_Sans'] text-sm text-[#f5f0e8]/70 leading-relaxed">
-                  Av. Central, San José
+                  Lorem Ipsum 000, Dolor Sit
                   <br />
-                  Frente al Parque Central
+                  Amet Consectetur Adipiscing
                 </span>
               </div>
             </div>
@@ -154,10 +154,10 @@ export default function Contact() {
       <div className="border-t border-[#1a1a1a]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-['DM_Sans'] text-xs text-[#f5f0e8]/20 tracking-wider">
-            © 2024 Brass &amp; Bun. Todos los derechos reservados.
+            © 0000 Lorem &amp; Ipsum. Lorem ipsum dolor sit amet.
           </p>
           <div className="flex gap-6">
-            {['Política de Privacidad', 'Términos de Uso'].map((item) => (
+            {['Lorem Ipsum', 'Dolor Sit'].map((item) => (
               <a
                 key={item}
                 href="#"

@@ -8,117 +8,117 @@ const categories = ['Burgers', 'Sides', 'Bebidas', 'Postres'];
 const menuData = {
   Burgers: [
     {
-      name: 'The Obsidian',
-      description: 'Doble smash de res, queso ahumado, cebolla caramelizada, aioli de trufa negra y pan brioche tostado al carbón.',
-      price: '₡8,900',
+      name: 'Lorem Ipsum',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80',
     },
     {
-      name: 'Fuego Amarillo',
-      description: 'Res 150g, jalapeños en escabeche, queso pepper jack fundido, mayo de mango y habanero, lechuga crocante.',
-      price: '₡7,500',
+      name: 'Dolor Sit Amet',
+      description: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80',
     },
     {
-      name: 'La Bresaola',
-      description: 'Presa wagyu, bresaola italiana, rúcula silvestre, queso parmesano rallado, reducción de balsámico añejo.',
-      price: '₡9,500',
+      name: 'Consectetur Adipiscing',
+      description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80',
     },
     {
-      name: 'The Midnight',
-      description: 'Bun de carbón activado, res 180g, queso azul, tocino crujiente, cebolla morada encurtida, mostaza dijon.',
-      price: '₡8,200',
+      name: 'Ipsum Eiusmod',
+      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80',
     },
     {
-      name: 'Crispy Blanca',
-      description: 'Muslo de pollo frito en suero de leche, salsa ranch casera, ensalada de col morada, pepinillos artesanales.',
-      price: '₡7,200',
+      name: 'Tempor Incididunt',
+      description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600&q=80',
     },
     {
-      name: 'El Clásico',
-      description: 'La burger que empezó todo. Res 130g, queso cheddar americano, lechuga, tomate, cebolla y nuestra salsa B&B secreta.',
-      price: '₡6,500',
+      name: 'Magna Aliqua',
+      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600&q=80',
     },
   ],
   Sides: [
     {
-      name: 'Truffle Fries',
-      description: 'Papas fritas en aceite de girasol, aceite de trufa blanca, parmesano rallado y cebollín fresco.',
-      price: '₡3,800',
+      name: 'Lorem Veniam',
+      description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1576107232684-1279f390859f?w=600&q=80',
     },
     {
-      name: 'Onion Rings Brass',
-      description: 'Aros de cebolla dulce en masa de cerveza artesanal, tempura crujiente, salsa chipotle ahumada.',
-      price: '₡3,500',
+      name: 'Ipsum Nostrud',
+      description: 'Ut labore et dolore magnam aliquam quaerat voluptatem ut enim ad minima veniam quis nostrum exercitationem.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1639024471283-03518883512d?w=600&q=80',
     },
     {
-      name: 'Mac & Smoke',
-      description: 'Macarrones cremosos con queso gouda ahumado y cheddar, cubiertos con breadcrumbs de pan sourdough.',
-      price: '₡4,200',
+      name: 'Dolor Exercitation',
+      description: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1612182258635-6897d0dbe78c?w=600&q=80',
     },
     {
-      name: 'Slaw de la Casa',
-      description: 'Ensalada de repollo morado y verde, zanahoria rallada, cilantro, aderezo de limón y jengibre fresco.',
-      price: '₡2,800',
+      name: 'Amet Ullamco',
+      description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80',
     },
   ],
   Bebidas: [
     {
-      name: 'Amber Lemonade',
-      description: 'Limonada prensada en frío, miel de abeja del campo, jengibre fresco, soda artesanal y twist de naranja.',
-      price: '₡3,500',
+      name: 'Lorem Laboris',
+      description: 'Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=600&q=80',
     },
     {
-      name: 'Cold Brew Noir',
-      description: 'Cold brew de 24 horas, leche de avena, jarabe de vainilla bourbon, hielo negro activado.',
-      price: '₡4,000',
+      name: 'Ipsum Fugiat',
+      description: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80',
     },
     {
-      name: 'Tamarindo Fuerte',
-      description: 'Pulpa de tamarindo natural, piloncillo, chile piquín en el borde, hielo granizado y limón costarricense.',
-      price: '₡3,200',
+      name: 'Dolor Repudiandae',
+      description: 'Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis voluptatibus maiores alias consequatur.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=80',
     },
     {
-      name: 'Cerveza Artesanal',
-      description: 'Selección rotativa de la semana: IPA, Stout o Amber Ale de microbreweries locales costarricenses.',
-      price: '₡4,500',
+      name: 'Sit Voluptatem',
+      description: 'Similique sunt in culpa qui officia deserunt mollitia animi id est laborum et dolorum fuga harum quidem rerum.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=600&q=80',
     },
   ],
   Postres: [
     {
-      name: 'Tarta Negra',
-      description: 'Tarta de chocolate belga 72%, base de galleta de carbón, crema chantilly de vainilla de Tahití y polvo de cacao.',
-      price: '₡4,500',
+      name: 'Lorem Accusantium',
+      description: 'Et harum quidem rerum facilis est et expedita distinctio nam libero tempore cum soluta nobis eligendi optio.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80',
     },
     {
-      name: 'Dulce de Leche Shake',
-      description: 'Milkshake espeso de helado artesanal, dulce de leche hondureño, crema batida y caramelo salado.',
-      price: '₡4,800',
+      name: 'Ipsum Laudantium',
+      description: 'Nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure reprehenderit qui voluptate velit esse quam.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&q=80',
     },
     {
-      name: 'Churros de la Noche',
-      description: 'Churros recién fritos en aceite de coco, canela y azúcar morena, con dip de chocolate oscuro caliente.',
-      price: '₡3,900',
+      name: 'Dolor Perspiciatis',
+      description: 'Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid commodi.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1624371414361-6b26e97cc4ee?w=600&q=80',
     },
     {
-      name: 'Helado Ahumado',
-      description: 'Helado de caramelo ahumado con sal de Guanacaste, granola de avena y nueces tostadas, miel de flores.',
-      price: '₡3,700',
+      name: 'Amet Architecto',
+      description: 'Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas.',
+      price: '₡0,000',
       image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&q=80',
     },
   ],
@@ -187,12 +187,12 @@ export default function Menu() {
           <div className="flex items-center gap-4 mb-4">
             <span className="w-12 h-px bg-[#c8621a]" />
             <span className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#c8621a] font-semibold">
-              Lo que servimos
+              Lorem ipsum dolor
             </span>
           </div>
           <h2 className="font-['Playfair_Display'] font-black text-[#f5f0e8] leading-tight"
             style={{ fontSize: 'clamp(3rem, 6vw, 6rem)' }}>
-            El Menú
+            Lorem Ipsum
           </h2>
         </motion.div>
 

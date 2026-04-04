@@ -60,7 +60,7 @@ export default function Hero() {
           <motion.div variants={itemVariants} className="flex items-center gap-4 mb-8">
             <span className="w-12 h-px bg-[#c8621a]" />
             <span className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#c8621a] font-semibold">
-              San José, Costa Rica
+              Lorem Ipsum, Dolor
             </span>
           </motion.div>
 
@@ -70,7 +70,7 @@ export default function Hero() {
             className="font-['Playfair_Display'] font-black leading-[0.95] text-[#f5f0e8] mb-2"
             style={{ fontSize: 'clamp(4rem, 10vw, 9rem)' }}
           >
-            Sabor Sin
+            Lorem Ipsum
           </motion.h1>
           <motion.h1
             variants={itemVariants}
@@ -80,7 +80,7 @@ export default function Hero() {
               WebkitTextStroke: '2px #f5f0e8',
             }}
           >
-            Concesiones.
+            Dolor Sit.
           </motion.h1>
 
           {/* Subtext */}
@@ -88,7 +88,7 @@ export default function Hero() {
             variants={itemVariants}
             className="font-['DM_Sans'] text-lg lg:text-xl text-[#f5f0e8]/70 mb-12 max-w-md font-light tracking-wide"
           >
-            Ingredientes de calidad. Sin filtros. Sin prisa.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
           </motion.p>
 
           {/* CTAs */}
@@ -118,18 +118,18 @@ export default function Hero() {
       >
         <div className="hidden md:flex items-center gap-8 text-[#f5f0e8]/40">
           <div className="text-center">
-            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">2018</div>
-            <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Fundado</div>
+            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">0000</div>
+            <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Lorem</div>
           </div>
           <div className="w-px h-10 bg-[#f5f0e8]/20" />
           <div className="text-center">
-            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">12</div>
-            <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Items en Menú</div>
+            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">00</div>
+            <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Lorem Ipsum</div>
           </div>
           <div className="w-px h-10 bg-[#f5f0e8]/20" />
           <div className="text-center">
-            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">4.9</div>
-            <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Calificación</div>
+            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">0.0</div>
+            <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Dolor Sit</div>
           </div>
         </div>
 

@@ -3,9 +3,9 @@ import { motion, useInView } from 'framer-motion';
 import { RiTimeLine, RiMapPinLine, RiPhoneLine } from 'react-icons/ri';
 
 const hours = [
-  { days: 'Lunes — Viernes', time: '11:00 am – 10:00 pm' },
-  { days: 'Sábado', time: '11:00 am – 11:30 pm' },
-  { days: 'Domingo', time: '12:00 pm – 9:00 pm' },
+  { days: 'Lorem — Ipsum', time: '00:00 am – 00:00 pm' },
+  { days: 'Dolor Sit', time: '00:00 am – 00:00 pm' },
+  { days: 'Amet Consectetur', time: '00:00 pm – 00:00 pm' },
 ];
 
 export default function Location() {
@@ -29,16 +29,16 @@ export default function Location() {
           <div className="flex items-center gap-4 mb-4">
             <span className="w-12 h-px bg-[#c8621a]" />
             <span className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#c8621a] font-semibold">
-              Dónde y cuándo
+              Lorem ipsum dolor
             </span>
           </div>
           <h2
             className="font-['Playfair_Display'] font-black text-[#f5f0e8] leading-tight"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)' }}
           >
-            Horario &amp;
+            Lorem Ipsum &amp;
             <br />
-            <span className="italic text-[#d4a853]">Ubicación</span>
+            <span className="italic text-[#d4a853]">Dolor Sit</span>
           </h2>
         </motion.div>
 
@@ -55,7 +55,7 @@ export default function Location() {
               <div className="flex items-center gap-3 mb-6">
                 <RiTimeLine className="text-[#c8621a] text-2xl" />
                 <span className="font-['DM_Sans'] font-semibold tracking-widest text-xs uppercase text-[#f5f0e8]/60">
-                  Horarios de Atención
+                  Lorem Ipsum Dolor
                 </span>
               </div>
               <div className="space-y-0 divide-y divide-[#2e2e2e]">
@@ -80,11 +80,11 @@ export default function Location() {
                   <RiMapPinLine className="text-[#c8621a] text-lg" />
                 </div>
                 <div>
-                  <div className="font-['DM_Sans'] font-semibold text-[#f5f0e8] mb-1">Dirección</div>
+                  <div className="font-['DM_Sans'] font-semibold text-[#f5f0e8] mb-1">Lorem Ipsum</div>
                   <div className="font-['DM_Sans'] text-[#f5f0e8]/55 text-sm leading-relaxed">
-                    Av. Central, San José, Costa Rica
+                    Lorem Ipsum 000, Dolor Sit
                     <br />
-                    Frente al Parque Central
+                    Amet Consectetur Adipiscing
                   </div>
                 </div>
               </div>
@@ -94,9 +94,9 @@ export default function Location() {
                   <RiPhoneLine className="text-[#c8621a] text-lg" />
                 </div>
                 <div>
-                  <div className="font-['DM_Sans'] font-semibold text-[#f5f0e8] mb-1">Teléfono</div>
+                  <div className="font-['DM_Sans'] font-semibold text-[#f5f0e8] mb-1">Lorem Dolor</div>
                   <div className="font-['DM_Sans'] text-[#f5f0e8]/55 text-sm">
-                    +506 2222 – 4567
+                    +506 0000 – 0000
                   </div>
                 </div>
               </div>

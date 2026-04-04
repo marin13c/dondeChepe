@@ -4,45 +4,45 @@ import { RiStarFill, RiStarLine } from 'react-icons/ri';
 
 const reviews = [
   {
-    name: 'Camila Rodríguez',
-    date: 'Marzo 2024',
+    name: 'Lorem Ipsum',
+    date: 'Dolor 0000',
     rating: 5,
-    text: 'Vine con pocas expectativas porque "gourmet" y "rápido" raramente van de la mano. Me equivoqué por completo. The Obsidian es literalmente la mejor burger que he comido en Costa Rica. El brioche tostado al carbón, el aioli de trufa... impecable.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
     avatar: 'https://i.pravatar.cc/150?img=5',
   },
   {
-    name: 'Diego Vargas',
-    date: 'Febrero 2024',
+    name: 'Ipsum Dolor',
+    date: 'Sit 0000',
     rating: 5,
-    text: 'El ambiente es oscuro y elegante, me recordó a un speakeasy. La comida estuvo a la altura: pedí Fuego Amarillo y el picante era justo, sin matarte. Las papas truffle fries son adictivas. Ya volví tres veces este mes.',
+    text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.',
     avatar: 'https://i.pravatar.cc/150?img=33',
   },
   {
-    name: 'Sofía Mora',
-    date: 'Enero 2024',
+    name: 'Dolor Amet',
+    date: 'Amet 0000',
     rating: 5,
-    text: 'Daniela, la co-fundadora, estaba esa noche y pasó por las mesas. Se nota que el lugar es un proyecto de amor. La tarta negra de postre fue el cierre perfecto. Definitivamente el mejor restaurante de su estilo en San José.',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
     avatar: 'https://i.pravatar.cc/150?img=25',
   },
   {
-    name: 'Andrés Jiménez',
-    date: 'Diciembre 2023',
+    name: 'Consectetur Elit',
+    date: 'Lorem 0000',
     rating: 4,
-    text: 'La burger La Bresaola con bresaola italiana es una idea brillante. El servicio fue rápido y el personal conoce el menú a fondo. Le quito una estrella solo porque ese día no había cerveza Stout disponible. Pero volveré pronto.',
+    text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet.',
     avatar: 'https://i.pravatar.cc/150?img=68',
   },
   {
-    name: 'Valeria Ureña',
-    date: 'Noviembre 2023',
+    name: 'Adipiscing Sed',
+    date: 'Ipsum 0000',
     rating: 5,
-    text: 'Llevé a mi novio para su cumpleaños y quedó boquiabierto. El lugar tiene una vibra única, ni muy lujosa ni demasiado casual. Los churros de la noche con chocolate oscuro caliente son un MUST. Volvemos en dos semanas.',
+    text: 'Ut labore et dolore magnam aliquam quaerat voluptatem ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure.',
     avatar: 'https://i.pravatar.cc/150?img=44',
   },
   {
-    name: 'Marco Solano',
-    date: 'Octubre 2023',
+    name: 'Eiusmod Tempor',
+    date: 'Dolor 0000',
     rating: 5,
-    text: 'Llegué solo con hambre a las 9:30 pm un martes. Me atendieron como si fuera la primera mesa del día. El Clásico es humildemente perfecto: la salsa B&B secreta lo hace. Simple, pero ejecutado a la perfección. Brass & Bun es el estándar.',
+    text: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident similique.',
     avatar: 'https://i.pravatar.cc/150?img=57',
   },
 ];
@@ -124,16 +124,16 @@ export default function Reviews() {
             <div className="flex items-center gap-4 mb-4">
               <span className="w-12 h-px bg-[#c8621a]" />
               <span className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#c8621a] font-semibold">
-                Reseñas reales
+                Lorem ipsum dolor
               </span>
             </div>
             <h2
               className="font-['Playfair_Display'] font-black text-[#f5f0e8] leading-tight"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)' }}
             >
-              Lo Que
+              Lorem Ipsum
               <br />
-              <span className="italic text-[#d4a853]">Dicen</span>
+              <span className="italic text-[#d4a853]">Dolor</span>
             </h2>
           </div>
 
@@ -141,7 +141,7 @@ export default function Reviews() {
           <div className="flex items-center gap-4">
             <div className="text-right">
               <div className="font-['Playfair_Display'] font-black text-5xl text-[#d4a853] leading-none">4.9</div>
-              <div className="font-['DM_Sans'] text-xs text-[#f5f0e8]/40 mt-1 tracking-widest uppercase">Calificación promedio</div>
+              <div className="font-['DM_Sans'] text-xs text-[#f5f0e8]/40 mt-1 tracking-widest uppercase">Lorem ipsum dolor</div>
               <div className="flex justify-end mt-2 gap-0.5">
                 {[1,2,3,4,5].map(s => <RiStarFill key={s} className="text-[#d4a853] text-sm" />)}
               </div>
