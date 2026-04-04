@@ -45,7 +45,7 @@ export default function Navbar() {
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             className="font-['Playfair_Display'] text-2xl font-black tracking-widest text-[#f5f0e8] hover:text-[#d4a853] transition-colors duration-300"
           >
-            BRASS <span className="text-[#c8621a]">&</span> BUN
+            DONDE CHEPE
           </a>
 
           {/* Desktop Nav */}
@@ -91,7 +91,7 @@ export default function Navbar() {
             className="fixed inset-0 z-40 bg-[#0f0f0f] flex flex-col items-center justify-center gap-8"
           >
             <div className="font-['Playfair_Display'] text-3xl font-black tracking-widest text-[#f5f0e8] mb-8">
-              BRASS <span className="text-[#c8621a]">&</span> BUN
+              DONDE CHEPE
             </div>
             {navLinks.map((link, i) => (
               <motion.a

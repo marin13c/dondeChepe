@@ -124,7 +124,7 @@ export default function Location() {
             <div className="absolute -top-2 -left-2 w-full h-full border border-[#c8621a]/20" />
             <div className="relative overflow-hidden" style={{ height: '420px' }}>
               <iframe
-                title="Brass & Bun Location"
+                title="Donde Chepe Location"
                 src="https://maps.google.com/maps?q=9.9281,-84.0907&z=16&output=embed"
                 width="100%"
                 height="100%"
