@@ -60,9 +60,9 @@ export default function Location() {
               </div>
               <div className="space-y-0 divide-y divide-[#2e2e2e]">
                 {hours.map((h, i) => (
-                  <div key={i} className="flex items-center justify-between py-4">
+                  <div key={i} className="flex items-center justify-between gap-6 py-4">
                     <span className="font-['DM_Sans'] text-[#f5f0e8]/60 text-sm">{h.days}</span>
-                    <span className="font-['Playfair_Display'] font-bold text-[#d4a853] text-sm">
+                    <span className="font-['Playfair_Display'] font-bold text-[#d4a853] text-sm whitespace-nowrap shrink-0">
                       {h.time}
                     </span>
                   </div>
