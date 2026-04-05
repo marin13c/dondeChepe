@@ -32,11 +32,10 @@ export default function Navbar() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
             ? 'bg-[#0f0f0f]/95 backdrop-blur-md border-b border-[#2e2e2e] shadow-2xl'
             : 'bg-transparent'
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
           {/* Logo */}
@@ -45,7 +44,7 @@ export default function Navbar() {
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             className="font-['Playfair_Display'] text-2xl font-black tracking-widest text-[#f5f0e8] hover:text-[#d4a853] transition-colors duration-300"
           >
-            DONDE CHEPE
+            Donde Chere
           </a>
 
           {/* Desktop Nav */}
@@ -91,7 +90,7 @@ export default function Navbar() {
             className="fixed inset-0 z-40 bg-[#0f0f0f] flex flex-col items-center justify-center gap-8"
           >
             <div className="font-['Playfair_Display'] text-3xl font-black tracking-widest text-[#f5f0e8] mb-8">
-              DONDE CHEPE
+              Donde Chere
             </div>
             {navLinks.map((link, i) => (
               <motion.a

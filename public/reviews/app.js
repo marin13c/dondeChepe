@@ -1,28 +1,28 @@
 /* ============================================================
-   DONDE CHEPE — Sistema de Reseñas
+   Donde Chere — Sistema de Reseñas
    JavaScript Vanilla — sin librerías
    ============================================================ */
 
 'use strict';
 
 /* ── Constantes ─────────────────────────────────────────── */
-const STORAGE_KEY  = 'dondechepe_reviews';
-const MIN_CHARS    = 10;
-const MAX_CHARS    = 400;
+const STORAGE_KEY = 'dondechepe_reviews';
+const MIN_CHARS = 10;
+const MAX_CHARS = 400;
 const MIN_RATING_SHOW = 4; // solo mostrar 4-5 estrellas
 
 /* ── Referencias al DOM ──────────────────────────────────── */
-const form          = document.getElementById('review-form');
-const starsInputs   = document.querySelectorAll('input[name="rating"]');
-const starLabels    = document.querySelectorAll('.stars-interactive label');
-const starHint      = document.getElementById('star-hint');
-const textarea      = document.getElementById('comment');
-const charCounter   = document.getElementById('char-counter');
-const commentError  = document.getElementById('comment-error');
-const submitBtn     = document.getElementById('btn-submit');
-const toast         = document.getElementById('toast');
-const reviewsList   = document.getElementById('reviews-list');
-const reviewsCount  = document.getElementById('reviews-count');
+const form = document.getElementById('review-form');
+const starsInputs = document.querySelectorAll('input[name="rating"]');
+const starLabels = document.querySelectorAll('.stars-interactive label');
+const starHint = document.getElementById('star-hint');
+const textarea = document.getElementById('comment');
+const charCounter = document.getElementById('char-counter');
+const commentError = document.getElementById('comment-error');
+const submitBtn = document.getElementById('btn-submit');
+const toast = document.getElementById('toast');
+const reviewsList = document.getElementById('reviews-list');
+const reviewsCount = document.getElementById('reviews-count');
 
 /* ── Estado ──────────────────────────────────────────────── */
 let hasAttemptedSubmit = false;
@@ -45,10 +45,10 @@ function saveReviews(reviews) {
 function addReview(rating, comment) {
   const reviews = loadReviews();
   const entry = {
-    id:      crypto.randomUUID(),
-    rating:  Number(rating),
+    id: crypto.randomUUID(),
+    rating: Number(rating),
     comment: comment.trim(),
-    date:    new Date().toISOString(),
+    date: new Date().toISOString(),
   };
   reviews.unshift(entry); // más reciente primero
   saveReviews(reviews);
@@ -101,7 +101,7 @@ function validateComment() {
 
   charCounter.textContent = `${len} / ${MAX_CHARS}`;
   charCounter.classList.toggle('under-min', len > 0 && len < MIN_CHARS);
-  charCounter.classList.toggle('at-max',    len === MAX_CHARS);
+  charCounter.classList.toggle('at-max', len === MAX_CHARS);
 
   if (!hasAttemptedSubmit) return true; // validar silencioso hasta primer submit
 
@@ -233,7 +233,7 @@ form.addEventListener('submit', e => {
   e.preventDefault();
   hasAttemptedSubmit = true;
 
-  const ratingOk  = validateRating();
+  const ratingOk = validateRating();
   const commentOk = validateComment();
 
   if (!ratingOk || !commentOk) {
