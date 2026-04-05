@@ -38,7 +38,7 @@ export default function About() {
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#c8621a] opacity-30" />
               <img
                 src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
-                alt="Detrás del mostrador en Donde Chepe"
+                alt="Detrás del mostrador en Donde Chere"
                 className="w-full h-[500px] object-cover relative z-10"
               />
               {/* Floating badge */}

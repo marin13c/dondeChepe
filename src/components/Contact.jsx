@@ -56,7 +56,7 @@ export default function Contact() {
             transition={{ duration: 0.7 }}
           >
             <div className="font-['Playfair_Display'] text-3xl font-black tracking-widest text-[#f5f0e8] mb-3">
-              DONDE CHEPE
+              Donde Chere
             </div>
             <p className="font-['DM_Sans'] text-[#f5f0e8]/45 text-sm leading-relaxed font-light max-w-xs">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
