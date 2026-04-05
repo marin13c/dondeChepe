@@ -22,7 +22,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="nosotros" className="bg-[#f5f0e8] py-28 overflow-hidden">
+    <section id="nosotros" className="bg-[#f2e4c8] py-28 overflow-hidden">
       <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Two-column layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-24">
@@ -64,7 +64,7 @@ export default function About() {
             </div>
 
             <h2
-              className="font-['Playfair_Display'] font-black text-[#0f0f0f] leading-tight mb-8"
+              className="font-['Playfair_Display'] font-black text-[#140b05] leading-tight mb-8"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}
             >
               Lorem Ipsum
@@ -72,7 +72,7 @@ export default function About() {
               <span className="italic text-[#c8621a]">Dolor Sit</span>
             </h2>
 
-            <div className="space-y-4 font-['DM_Sans'] text-[#0f0f0f]/65 text-lg leading-relaxed font-light">
+            <div className="space-y-4 font-['DM_Sans'] text-[#140b05]/65 text-lg leading-relaxed font-light">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud
@@ -90,7 +90,7 @@ export default function About() {
             </div>
 
             {/* Stats */}
-            <div className="mt-10 grid grid-cols-3 gap-6 pt-8 border-t border-[#0f0f0f]/10">
+            <div className="mt-10 grid grid-cols-3 gap-6 pt-8 border-t border-[#140b05]/10">
               {[
                 { num: '00K+', label: 'Lorem ipsum' },
                 { num: '0.0★', label: 'Dolor sit' },
@@ -98,7 +98,7 @@ export default function About() {
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="font-['Playfair_Display'] font-black text-2xl text-[#c8621a]">{stat.num}</div>
-                  <div className="font-['DM_Sans'] text-xs text-[#0f0f0f]/50 mt-1">{stat.label}</div>
+                  <div className="font-['DM_Sans'] text-xs text-[#140b05]/50 mt-1">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -113,7 +113,7 @@ export default function About() {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.3 + i * 0.15, ease: [0.22, 1, 0.36, 1] }}
-              className="bg-white p-8 flex gap-6 items-start shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="bg-[#f5e8cc] p-8 flex gap-6 items-start shadow-sm hover:shadow-md transition-shadow duration-300"
               style={{ border: '1px solid rgba(15,15,15,0.08)' }}
             >
               <img
@@ -122,15 +122,15 @@ export default function About() {
                 className="w-16 h-16 rounded-full object-cover flex-shrink-0 ring-2 ring-[#c8621a]/30"
               />
               <div>
-                <div className="font-['Playfair_Display'] font-bold text-xl text-[#0f0f0f] mb-0.5">
+                <div className="font-['Playfair_Display'] font-bold text-xl text-[#140b05] mb-0.5">
                   {owner.name}
                 </div>
                 <div className="font-['DM_Sans'] text-xs tracking-wider uppercase text-[#c8621a] font-semibold mb-4">
                   {owner.role}
                 </div>
                 <div className="flex gap-2 items-start">
-                  <RiDoubleQuotesL className="text-[#d4a853] text-xl flex-shrink-0 mt-0.5" />
-                  <p className="font-['DM_Sans'] text-[#0f0f0f]/60 text-sm leading-relaxed italic">
+                  <RiDoubleQuotesL className="text-[#c47830] text-xl flex-shrink-0 mt-0.5" />
+                  <p className="font-['DM_Sans'] text-[#140b05]/60 text-sm leading-relaxed italic">
                     {owner.quote.replace(/^"|"$/g, '')}
                   </p>
                 </div>

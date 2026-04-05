@@ -36,8 +36,8 @@ export default function Hero() {
       />
 
       {/* Dark gradient overlays */}
-      <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0f0f0f] via-[#0f0f0f]/80 to-[#0f0f0f]/30" />
-      <div className="absolute inset-0 z-1 bg-gradient-to-t from-[#0f0f0f] via-transparent to-[#0f0f0f]/40" />
+      <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#140b05] via-[#140b05]/80 to-[#140b05]/30" />
+      <div className="absolute inset-0 z-1 bg-gradient-to-t from-[#140b05] via-transparent to-[#140b05]/40" />
 
       {/* Decorative amber line */}
       <motion.div
@@ -67,7 +67,7 @@ export default function Hero() {
           {/* Main headline */}
           <motion.h1
             variants={itemVariants}
-            className="font-['Playfair_Display'] font-black leading-[0.95] text-[#f5f0e8] mb-2"
+            className="font-['Playfair_Display'] font-black leading-[0.95] text-[#f2e4c8] mb-2"
             style={{ fontSize: 'clamp(4rem, 10vw, 9rem)' }}
           >
             Lorem Ipsum
@@ -77,7 +77,7 @@ export default function Hero() {
             className="font-['Playfair_Display'] font-black italic leading-[0.95] text-transparent mb-10"
             style={{
               fontSize: 'clamp(4rem, 10vw, 9rem)',
-              WebkitTextStroke: '2px #f5f0e8',
+              WebkitTextStroke: '2px #f2e4c8',
             }}
           >
             Dolor Sit.
@@ -86,7 +86,7 @@ export default function Hero() {
           {/* Subtext */}
           <motion.p
             variants={itemVariants}
-            className="font-['DM_Sans'] text-lg lg:text-xl text-[#f5f0e8]/70 mb-12 max-w-md font-light tracking-wide"
+            className="font-['DM_Sans'] text-lg lg:text-xl text-[#f2e4c8]/70 mb-12 max-w-md font-light tracking-wide"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
           </motion.p>
@@ -95,13 +95,13 @@ export default function Hero() {
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
             <button
               onClick={scrollToMenu}
-              className="font-['DM_Sans'] font-semibold text-sm tracking-widest uppercase bg-[#c8621a] hover:bg-[#e07a30] text-[#f5f0e8] px-10 py-4 transition-all duration-300 hover:shadow-xl hover:shadow-[#c8621a]/40 hover:-translate-y-0.5"
+              className="font-['DM_Sans'] font-semibold text-sm tracking-widest uppercase bg-[#c8621a] hover:bg-[#e07a30] text-[#f2e4c8] px-10 py-4 transition-all duration-300 hover:shadow-xl hover:shadow-[#c8621a]/40 hover:-translate-y-0.5"
             >
               Ver Menú
             </button>
             <button
               onClick={scrollToAbout}
-              className="font-['DM_Sans'] font-semibold text-sm tracking-widest uppercase border border-[#f5f0e8]/40 hover:border-[#f5f0e8] text-[#f5f0e8]/70 hover:text-[#f5f0e8] px-10 py-4 transition-all duration-300 hover:-translate-y-0.5"
+              className="font-['DM_Sans'] font-semibold text-sm tracking-widest uppercase border border-[#f2e4c8]/40 hover:border-[#f2e4c8] text-[#f2e4c8]/70 hover:text-[#f2e4c8] px-10 py-4 transition-all duration-300 hover:-translate-y-0.5"
             >
               Nuestra Historia
             </button>
@@ -116,30 +116,30 @@ export default function Hero() {
         transition={{ delay: 1.6, duration: 0.8 }}
         className="absolute bottom-10 left-6 right-6 lg:left-10 lg:right-10 z-10 flex items-end justify-between"
       >
-        <div className="hidden md:flex items-center gap-8 text-[#f5f0e8]/40">
+        <div className="hidden md:flex items-center gap-8 text-[#f2e4c8]/40">
           <div className="text-center">
-            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">0000</div>
+            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#c47830]">0000</div>
             <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Lorem</div>
           </div>
-          <div className="w-px h-10 bg-[#f5f0e8]/20" />
+          <div className="w-px h-10 bg-[#f2e4c8]/20" />
           <div className="text-center">
-            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">00</div>
+            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#c47830]">00</div>
             <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Lorem Ipsum</div>
           </div>
-          <div className="w-px h-10 bg-[#f5f0e8]/20" />
+          <div className="w-px h-10 bg-[#f2e4c8]/20" />
           <div className="text-center">
-            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#d4a853]">0.0</div>
+            <div className="font-['Playfair_Display'] text-2xl font-bold text-[#c47830]">0.0</div>
             <div className="font-['DM_Sans'] text-xs tracking-widest uppercase">Dolor Sit</div>
           </div>
         </div>
 
         {/* Scroll indicator */}
-        <div className="flex flex-col items-center gap-2 text-[#f5f0e8]/30">
+        <div className="flex flex-col items-center gap-2 text-[#f2e4c8]/30">
           <span className="font-['DM_Sans'] text-xs tracking-widest uppercase">Scroll</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
-            className="w-px h-8 bg-gradient-to-b from-[#f5f0e8]/30 to-transparent"
+            className="w-px h-8 bg-gradient-to-b from-[#f2e4c8]/30 to-transparent"
           />
         </div>
       </motion.div>
