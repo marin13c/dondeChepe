@@ -131,7 +131,7 @@ function MenuCard({ item, index }) {
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ y: -4, scale: 1.01, transition: { duration: 0.2, ease: 'easeOut' } }}
       transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
-      className="group relative bg-[#1a1a1a] overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-[#c8621a]/20 transition-shadow duration-500 border border-[#2e2e2e] hover:border-[#c8621a]/40"
+      className="group relative bg-[#1e1008] overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-[#c8621a]/20 transition-shadow duration-500 border border-[#3d2512] hover:border-[#c8621a]/40"
     >
       {/* Image */}
       <div className="relative overflow-hidden h-52">
@@ -140,7 +140,7 @@ function MenuCard({ item, index }) {
           alt={item.name}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1e1008] via-transparent to-transparent" />
         {/* Price badge */}
         <div className="absolute top-3 right-3 bg-[#c8621a] font-['DM_Sans'] font-bold text-sm text-white px-3 py-1">
           {item.price}
@@ -149,10 +149,10 @@ function MenuCard({ item, index }) {
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="font-['Playfair_Display'] font-bold text-xl text-[#f5f0e8] mb-2 group-hover:text-[#d4a853] transition-colors duration-300">
+        <h3 className="font-['Playfair_Display'] font-bold text-xl text-[#f2e4c8] mb-2 group-hover:text-[#c47830] transition-colors duration-300">
           {item.name}
         </h3>
-        <p className="font-['DM_Sans'] text-sm text-[#f5f0e8]/55 leading-relaxed">
+        <p className="font-['DM_Sans'] text-sm text-[#f2e4c8]/55 leading-relaxed">
           {item.description}
         </p>
         {/* Bottom amber accent */}
@@ -168,11 +168,11 @@ export default function Menu() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="menu" className="relative bg-[#0f0f0f] py-28 overflow-hidden">
+    <section id="menu" className="relative bg-[#140b05] py-28 overflow-hidden">
       {/* Background texture */}
       <div className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: 'radial-gradient(circle at 20% 80%, #c8621a 0%, transparent 50%), radial-gradient(circle at 80% 20%, #d4a853 0%, transparent 50%)',
+          backgroundImage: 'radial-gradient(circle at 20% 80%, #c8621a 0%, transparent 50%), radial-gradient(circle at 80% 20%, #c47830 0%, transparent 50%)',
         }}
       />
 
@@ -190,7 +190,7 @@ export default function Menu() {
               Lorem ipsum dolor
             </span>
           </div>
-          <h2 className="font-['Playfair_Display'] font-black text-[#f5f0e8] leading-tight"
+          <h2 className="font-['Playfair_Display'] font-black text-[#f2e4c8] leading-tight"
             style={{ fontSize: 'clamp(3rem, 6vw, 6rem)' }}>
             Lorem Ipsum
           </h2>
@@ -201,7 +201,7 @@ export default function Menu() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-wrap gap-1 mb-12 border-b border-[#2e2e2e]"
+          className="flex flex-wrap gap-1 mb-12 border-b border-[#3d2512]"
         >
           {categories.map((cat) => (
             <button
@@ -210,7 +210,7 @@ export default function Menu() {
               className={`relative font-['DM_Sans'] font-semibold text-sm tracking-wider uppercase px-6 py-4 transition-all duration-300 ${
                 activeTab === cat
                   ? 'text-[#c8621a]'
-                  : 'text-[#f5f0e8]/40 hover:text-[#f5f0e8]/80'
+                  : 'text-[#f2e4c8]/40 hover:text-[#f2e4c8]/80'
               }`}
             >
               {cat}
