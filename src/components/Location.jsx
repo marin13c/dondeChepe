@@ -27,8 +27,8 @@ export default function Location() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-4">
-            <span className="w-12 h-px bg-[#c8621a]" />
-            <span className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#c8621a] font-semibold">
+            <span className="w-12 h-px bg-[#4e7535]" />
+            <span className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#4e7535] font-semibold">
               Lorem ipsum dolor
             </span>
           </div>
@@ -76,8 +76,8 @@ export default function Location() {
             {/* Address */}
             <div className="space-y-5">
               <div className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-full bg-[#c8621a]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <RiMapPinLine className="text-[#c8621a] text-lg" />
+                <div className="w-10 h-10 rounded-full bg-[#4e7535]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <RiMapPinLine className="text-[#4e7535] text-lg" />
                 </div>
                 <div>
                   <div className="font-['DM_Sans'] font-semibold text-[#f2e4c8] mb-1">Lorem Ipsum</div>
@@ -107,7 +107,7 @@ export default function Location() {
               href="https://maps.google.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 font-['DM_Sans'] font-semibold text-xs tracking-widest uppercase text-[#c8621a] hover:text-[#e07a30] transition-colors duration-300 border-b border-[#c8621a]/40 hover:border-[#e07a30] pb-1"
+              className="inline-flex items-center gap-3 font-['DM_Sans'] font-semibold text-xs tracking-widest uppercase text-[#4e7535] hover:text-[#3d5a28] transition-colors duration-300 border-b border-[#4e7535]/40 hover:border-[#3d5a28] pb-1"
             >
               <RiMapPinLine />
               Ver en Google Maps

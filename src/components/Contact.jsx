@@ -44,7 +44,7 @@ export default function Contact() {
   return (
     <section id="contacto" className="relative bg-[#140b05] overflow-hidden">
       {/* Top separator */}
-      <div className="h-px bg-gradient-to-r from-transparent via-[#c8621a]/50 to-transparent" />
+      <div className="h-px bg-gradient-to-r from-transparent via-[#4e7535]/50 to-transparent" />
 
       {/* Main footer content */}
       <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
@@ -136,7 +136,7 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start gap-3">
-              <RiMapPinLine className="text-[#c8621a] text-lg mt-0.5 flex-shrink-0" />
+              <RiMapPinLine className="text-[#4e7535] text-lg mt-0.5 flex-shrink-0" />
               <div>
                 <div className="font-['DM_Sans'] text-xs text-[#f2e4c8]/35 mb-0.5 tracking-wider uppercase">Dolor Amet</div>
                 <span className="font-['DM_Sans'] text-sm text-[#f2e4c8]/70 leading-relaxed">

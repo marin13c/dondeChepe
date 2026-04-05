@@ -39,12 +39,12 @@ export default function Hero() {
       <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#140b05] via-[#140b05]/80 to-[#140b05]/30" />
       <div className="absolute inset-0 z-1 bg-gradient-to-t from-[#140b05] via-transparent to-[#140b05]/40" />
 
-      {/* Decorative amber line */}
+      {/* Decorative green line */}
       <motion.div
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 1 }}
         transition={{ delay: 1.2, duration: 0.8, ease: 'easeOut' }}
-        className="absolute left-0 w-1 h-64 bg-[#c8621a] origin-top hidden lg:block"
+        className="absolute left-0 w-1 h-64 bg-[#4e7535] origin-top hidden lg:block"
         style={{ top: 'calc(50% - 8rem)' }}
       />
 

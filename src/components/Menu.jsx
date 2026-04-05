@@ -155,8 +155,8 @@ function MenuCard({ item, index }) {
         <p className="font-['DM_Sans'] text-sm text-[#f2e4c8]/55 leading-relaxed">
           {item.description}
         </p>
-        {/* Bottom amber accent */}
-        <div className="mt-4 w-0 h-0.5 bg-[#c8621a] transition-all duration-500 group-hover:w-full" />
+        {/* Bottom green accent */}
+        <div className="mt-4 w-0 h-0.5 bg-[#4e7535] transition-all duration-500 group-hover:w-full" />
       </div>
     </motion.div>
   );
@@ -172,7 +172,7 @@ export default function Menu() {
       {/* Background texture */}
       <div className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: 'radial-gradient(circle at 20% 80%, #c8621a 0%, transparent 50%), radial-gradient(circle at 80% 20%, #c47830 0%, transparent 50%)',
+          backgroundImage: 'radial-gradient(circle at 20% 80%, #3d5a28 0%, transparent 50%), radial-gradient(circle at 80% 20%, #c8621a 0%, transparent 50%)',
         }}
       />
 
