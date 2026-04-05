@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dejá tu reseña sobre Donde Chepe — restaurante en San José, Costa Rica." />
+  <title>Reseñas — Donde Chepe</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">DONDE CHEPE</a>
+      <a href="/" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M19 12H5M5 12l7-7M5 12l7 7"/>
+        </svg>
+        Volver al sitio
+      </a>
+    </div>
+  </header>
+
+  <main class="page-wrapper">
+
+    <!-- ── Formulario ──────────────────────────────────── -->
+    <section aria-labelledby="form-heading">
+      <div class="eyebrow">
+        <span class="eyebrow-line" aria-hidden="true"></span>
+        <span class="eyebrow-text">Comparte tu experiencia</span>
+      </div>
+      <h1 id="form-heading" class="section-title">
+        Dejá tu <em>Reseña</em>
+      </h1>
+      <p class="section-subtitle">
+        Tu opinión nos ayuda a mejorar y a otros comensales a elegir mejor.
+      </p>
+
+      <div class="form-section">
+        <form id="review-form" novalidate autocomplete="off">
+
+          <!-- Estrellas -->
+          <div class="star-group">
+            <label class="field-label" id="rating-label">Calificación</label>
+
+            <div
+              class="stars-interactive"
+              role="radiogroup"
+              aria-labelledby="rating-label"
+              aria-required="true"
+            >
+              <!-- invertido para el truco CSS de hover (flex-direction: row-reverse) -->
+              <input type="radio" id="star-5" name="rating" value="5" />
+              <label for="star-5" title="5 — Excelente" aria-label="5 estrellas — Excelente">★</label>
+
+              <input type="radio" id="star-4" name="rating" value="4" />
+              <label for="star-4" title="4 — Bueno" aria-label="4 estrellas — Bueno">★</label>
+
+              <input type="radio" id="star-3" name="rating" value="3" />
+              <label for="star-3" title="3 — Regular" aria-label="3 estrellas — Regular">★</label>
+
+              <input type="radio" id="star-2" name="rating" value="2" />
+              <label for="star-2" title="2 — Malo" aria-label="2 estrellas — Malo">★</label>
+
+              <input type="radio" id="star-1" name="rating" value="1" />
+              <label for="star-1" title="1 — Muy malo" aria-label="1 estrella — Muy malo">★</label>
+            </div>
+
+            <p id="star-hint" class="star-hint" aria-live="polite"></p>
+          </div>
+
+          <!-- Comentario -->
+          <div class="comment-group">
+            <label for="comment" class="field-label">Comentario</label>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Contanos sobre tu visita a Donde Chepe…"
+              maxlength="400"
+              aria-describedby="comment-error char-counter"
+              aria-required="true"
+            ></textarea>
+            <div class="field-meta">
+              <span id="comment-error" class="field-error" role="alert" aria-live="assertive"></span>
+              <span id="char-counter" class="char-counter" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" id="btn-submit" class="btn-submit">
+            Enviar Reseña <span aria-hidden="true">→</span>
+          </button>
+
+          <!-- Toast confirmación -->
+          <div id="toast" class="toast" role="status" aria-hidden="true">
+            <span class="toast-icon" aria-hidden="true">✓</span>
+            <div class="toast-text">
+              <strong>¡Gracias por tu reseña!</strong>
+              Tu opinión fue guardada exitosamente.
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- ── Lista de Reseñas ─────────────────────────────── -->
+    <section id="reviews-section" aria-labelledby="reviews-heading">
+      <div class="eyebrow">
+        <span class="eyebrow-line" aria-hidden="true"></span>
+        <span class="eyebrow-text">Lo que dicen</span>
+      </div>
+      <h2 id="reviews-heading" class="section-title">
+        Opiniones <em>Destacadas</em>
+      </h2>
+
+      <div class="reviews-meta">
+        <p id="reviews-count" class="reviews-count" aria-live="polite"></p>
+        <span class="filter-badge" title="Solo se muestran reseñas de 4 y 5 estrellas">
+          ★★★★ – ★★★★★ únicamente
+        </span>
+      </div>
+
+      <ul id="reviews-list" class="reviews-list" aria-label="Lista de reseñas destacadas">
+        <!-- Renderizado por app.js -->
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="page-wrapper">
+      <p>© Donde Chepe — Las reseñas se guardan localmente en tu navegador.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
