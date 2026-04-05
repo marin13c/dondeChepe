@@ -35,7 +35,7 @@ export default function About() {
           >
             <div className="relative">
               {/* Decorative offset box */}
-              <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#c8621a] opacity-30" />
+              <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#4e7535] opacity-30" />
               <img
                 src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
                 alt="Detrás del mostrador en Donde Chere"
@@ -57,8 +57,8 @@ export default function About() {
             className="order-1 lg:order-2"
           >
             <div className="flex items-center gap-4 mb-4">
-              <span className="w-12 h-px bg-[#c8621a]" />
-              <span className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#c8621a] font-semibold">
+              <span className="w-12 h-px bg-[#4e7535]" />
+              <span className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#4e7535] font-semibold">
                 Lorem ipsum dolor
               </span>
             </div>
