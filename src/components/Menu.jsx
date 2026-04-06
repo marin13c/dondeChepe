@@ -141,20 +141,13 @@ function MenuCard({ item, index }) {
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1e1008] via-transparent to-transparent" />
-        {/* Price badge */}
-        <div className="absolute top-3 right-3 bg-[#c8621a] font-['DM_Sans'] font-bold text-sm text-white px-3 py-1">
-          {item.price}
-        </div>
       </div>
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="font-['Playfair_Display'] font-bold text-xl text-[#f2e4c8] mb-2 group-hover:text-[#c47830] transition-colors duration-300">
+        <h3 className="font-['Playfair_Display'] font-bold text-xl text-[#f2e4c8] group-hover:text-[#c47830] transition-colors duration-300">
           {item.name}
         </h3>
-        <p className="font-['DM_Sans'] text-sm text-[#f2e4c8]/55 leading-relaxed">
-          {item.description}
-        </p>
         {/* Bottom green accent */}
         <div className="mt-4 w-0 h-0.5 bg-[#4e7535] transition-all duration-500 group-hover:w-full" />
       </div>
@@ -187,7 +180,7 @@ export default function Menu() {
           <div className="flex items-center gap-4 mb-4">
             <span className="w-12 h-px bg-[#c8621a]" />
             <span className="font-['DM_Sans'] text-xs tracking-[0.3em] uppercase text-[#c8621a] font-semibold">
-              Lorem ipsum dolor
+              Menu
             </span>
           </div>
           <h2 className="font-['Playfair_Display'] font-black text-[#f2e4c8] leading-tight"
@@ -207,11 +200,10 @@ export default function Menu() {
             <button
               key={cat}
               onClick={() => setActiveTab(cat)}
-              className={`relative font-['DM_Sans'] font-semibold text-sm tracking-wider uppercase px-6 py-4 transition-all duration-300 ${
-                activeTab === cat
-                  ? 'text-[#c8621a]'
-                  : 'text-[#f2e4c8]/40 hover:text-[#f2e4c8]/80'
-              }`}
+              className={`relative font-['DM_Sans'] font-semibold text-sm tracking-wider uppercase px-6 py-4 transition-all duration-300 ${activeTab === cat
+                ? 'text-[#c8621a]'
+                : 'text-[#f2e4c8]/40 hover:text-[#f2e4c8]/80'
+                }`}
             >
               {cat}
               {activeTab === cat && (
