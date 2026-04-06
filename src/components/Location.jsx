@@ -1,6 +1,28 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { RiTimeLine, RiMapPinLine, RiPhoneLine } from 'react-icons/ri';
+import { SiGooglemaps, SiWaze, SiApple } from 'react-icons/si';
+
+const NAV_APPS = [
+  {
+    label: 'Google Maps',
+    icon: SiGooglemaps,
+    href: 'https://maps.app.goo.gl/Z4R3tbcTh3PWhjHm8',
+    color: '#4285F4',
+  },
+  {
+    label: 'Waze',
+    icon: SiWaze,
+    href: 'https://waze.com/ul?ll=8.681901,-83.006105&navigate=yes',
+    color: '#33CCFF',
+  },
+  {
+    label: 'Apple Maps',
+    icon: SiApple,
+    href: 'https://maps.apple.com/?q=8.681901,-83.006105',
+    color: '#f2e4c8',
+  },
+];
 
 const hours = [
   { days: 'Lorem — Ipsum', time: '00:00 am – 00:00 pm' },
@@ -102,16 +124,22 @@ export default function Location() {
               </div>
             </div>
 
-            {/* CTA */}
-            <a
-              href="https://maps.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 font-['DM_Sans'] font-semibold text-xs tracking-widest uppercase text-[#4e7535] hover:text-[#3d5a28] transition-colors duration-300 border-b border-[#4e7535]/40 hover:border-[#3d5a28] pb-1"
-            >
-              <RiMapPinLine />
-              Ver en Google Maps
-            </a>
+            {/* Navigation apps */}
+            <div className="flex flex-wrap gap-3">
+              {NAV_APPS.map(({ label, icon: Icon, href, color }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-['DM_Sans'] font-semibold text-xs tracking-wider uppercase px-4 py-2.5 border border-[#3d2512] hover:border-current transition-all duration-300"
+                  style={{ color }}
+                >
+                  <Icon className="text-base" />
+                  {label}
+                </a>
+              ))}
+            </div>
           </motion.div>
 
           {/* Right: Map */}
@@ -125,7 +153,7 @@ export default function Location() {
             <div className="relative overflow-hidden" style={{ height: '420px' }}>
               <iframe
                 title="Donde Chere Location"
-                src="https://maps.google.com/maps?q=9.9281,-84.0907&z=16&output=embed"
+                src="https://maps.google.com/maps?q=8.681901,-83.006105&z=16&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(100%) invert(92%) contrast(83%)' }}
